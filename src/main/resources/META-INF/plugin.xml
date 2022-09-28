@@ -6,13 +6,13 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
+<!--    <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.meimingle.cloudtoolkitcreplica.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.meimingle.cloudtoolkitcreplica.services.MyProjectService"/>
-    </extensions>
+    </extensions>-->
 
-    <applicationListeners>
+<!--    <applicationListeners>
         <listener class="com.github.meimingle.cloudtoolkitcreplica.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    </applicationListeners>-->
 </idea-plugin>
