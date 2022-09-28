@@ -22,7 +22,18 @@ version = properties("pluginVersion")
 
 // Configure project's dependencies
 repositories {
+    mavenLocal()
+    maven { url = uri("https://maven.aliyun.com/repository/public/") }
     mavenCentral()
+    maven { url = uri("https://plugins.gradle.org/m2/") }
+    maven { url = uri("https://oss.sonatype.org/content/groups/public") }
+    maven { url = uri("https://www.jetbrains.com/intellij-repository/releases") }
+    maven { url = uri("https://cache-redirector.jetbrains.com/intellij-dependencies") }
+}
+dependencies{
+    implementation("javax.activation:activation:1.1.1")
+    implementation("com.aliyun:aliyun-java-sdk-codeup:0.1.2")
+    implementation("com.aliyun:aliyun-java-sdk-core:4.6.0")
 }
 
 // Set the JVM language level used to compile sources and generate files - Java 11 is required since 2020.3
